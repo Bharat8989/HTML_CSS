@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Website</title>
+    <link rel="shortcut icon" href="/Episode-18/favicon logo1.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aquamarine;
+            background-image: linear-gradient(135deg, aquamarine, aquamarine);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 360px;
+            height: 570px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 10px;
+        }
+        .card img{
+            height: 50%;
+            border-radius: 10px;
+        }
+        .card h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .card p{
+            font-size: 1.2rem;
+        }
+        .box {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    color:blue;
+
+    top: 30%;
+    left: 40%;
+    animation: 19s ease-in 0s infinite alternate-reverse none running circleMovement;
+}
+
+@keyframes circleMovement {
+    0% {
+        top: 1%;
+        left: 1%;
+    }
+    30% {
+        top: 1%;  /* Upper side movement */
+        left: 9%; /* Final position */
+    }
+    60% {
+        top: 1%;  /* Upper side movement */
+        left: 1%;
+    }
+    100% {
+        top: 1%;  /* Upper side movement */
+        left: 45%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            The Easiest Way to Make QR code
+        </div>
+        <div class="card">
+           <img src="QR img.png" alt="Project QR Code">
+           <h2>Improve your front end skills buy developing Projects</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quibusdam dolore saepe magni numquam, totam aspernatur assumenda consequatur suscipit enim </p>
+        </div>
+        
+    </div>
+</body>
+</html>
